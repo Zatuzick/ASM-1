@@ -1,3 +1,6 @@
+<div>
+    <a routerLink="/admin/product/add">Add Product</a>
+</div>
 <table>
     <thead>
         <tr>
@@ -15,9 +18,12 @@
             <td>
                 <div class="">
                     <button (click)="removeItem(product.id)">
-                        Xóa
+                        delete
                     </button>
                 </div>
+                <button>
+                    <a routerLink="/admin/product/{{ product.id }}/edit">Edit</a>
+                </button>
             </td>
         </tr>
     </tbody>

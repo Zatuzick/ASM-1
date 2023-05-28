@@ -4,6 +4,7 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { AdminProductComponent } from './pages/admin/admin-product/admin-product.component';
 import { AddproductComponent } from './pages/admin/addproduct/addproduct.component';
+import { UpdateproductComponent } from './pages/admin/updateproduct/updateproduct.component';
 
 const routes: Routes = [
   {
@@ -11,7 +12,8 @@ const routes: Routes = [
       { path: "", redirectTo: "dashboard", pathMatch: "full" },
       { path: "dashboard", component: DashboardComponent },
       { path: "product", component: AdminProductComponent },
-      { path: "product/add", component: AddproductComponent }
+      { path: "product/add", component: AddproductComponent },
+      { path: "product/:id/edit", component: UpdateproductComponent }
     ]
   }
 ];
