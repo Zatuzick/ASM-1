@@ -1,0 +1,10 @@
+<div *ngIf="products && products.length">
+    <div *ngFor="let product of products; index as i">
+        <div>
+            <h3>
+                <a routerLink="/product/{{product.id}}">{{ product.name }}</a>
+            </h3>
+            <h4>{{ product.price }}</h4>
+        </div>
+    </div>
+</div>

@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { IProduct } from 'src/app/interfaces/Product';
 import { ProductService } from 'src/app/services/product.service';
 @Component({
-  selector: 'app-product-list',
-  templateUrl: './product-list.component.html',
-
+  selector: 'app-product-page',
+  templateUrl: './product-page.component.html',
+  styleUrls: ['./product-page.component.css']
 })
-export class ProductListComponent {
+export class ProductPageComponent {
   products: IProduct[] = [];
   constructor(private productService: ProductService) {
 

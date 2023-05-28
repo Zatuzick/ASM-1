@@ -14,6 +14,9 @@ import { DashboardComponent } from './pages/admin/dashboard/dashboard.component'
 import { AdminProductComponent } from './pages/admin/admin-product/admin-product.component';
 import { AddproductComponent } from './pages/admin/addproduct/addproduct.component';
 import { UpdateproductComponent } from './pages/admin/updateproduct/updateproduct.component';
+import { ProductPageComponent } from './pages/product-page/product-page.component';
+import { ProductdetailComponent } from './pages/productdetail/productdetail.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { UpdateproductComponent } from './pages/admin/updateproduct/updateproduc
     DashboardComponent,
     AdminProductComponent,
     AddproductComponent,
-    UpdateproductComponent
+    UpdateproductComponent,
+    ProductPageComponent,
+    ProductdetailComponent,
+
   ],
   imports: [
     BrowserModule,
