@@ -1,0 +1,10 @@
+<form [formGroup]="productForm" (ngSubmit)="onHandleSubmit()">
+    <div>
+        <input type="text" formControlName="name" name="name" placeholder="Tên sản phẩm" />
+    </div>
+    <div>
+        <input type="number" formControlName="price" name="price" placeholder="Giá sản phẩm" />
+    </div>
+    <button type="submit" [disabled]="!productForm.valid" class="btn btn-primary">Thêm sản
+        phẩm</button>
+</form>
